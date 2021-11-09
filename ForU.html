@@ -18,6 +18,9 @@
       jenisKelamin = " Ganteng"//cowok
     }
     var nama = prompt("Siapa Nama kamu?");
+    if(nama=="", "null"){
+      nama = "Kak";
+    }
     alert("Hallo, " + nama + jenisKelamin + " :)");
     
     var nembak = confirm("Kamu Mau Gak Jadi Pacar Aku");
