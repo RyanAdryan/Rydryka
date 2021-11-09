@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hi:)</title>
+</head>
+<body>
+  
+  <p id='y' style="font-size:150px;"></p>
+  
+  <script>
+    var nanya = confirm("Apakah Kamu Perempuan?")
+    
+    var jenisKelamin = "";
+    
+    if (nanya == true) {
+      jenisKelamin = " Cantik"//cewek
+    } else {
+      jenisKelamin = " Ganteng"//cowok
+    }
+    var nama = prompt("Siapa Nama kamu?");
+    alert("Hallo, " + nama + jenisKelamin + " :)");
+    
+    var nembak = confirm("Kamu Mau Gak Jadi Pacar Aku");
+    
+    if(nembak == true) {
+      alert("Hai Sayang:)");
+      document.getElementById('y').innerHTML = "I <3 U " + nama;
+    } else {
+      alert("Yahh, Mungkin Kita bukan jodoh:(");
+      document.getElementById('y').innerHTML = "Maaf " + nama + " telah mengganggu waktunya";
+    }
+  </script>
+</body>
+
+</html>
